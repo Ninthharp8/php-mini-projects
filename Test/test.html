@@ -15,7 +15,7 @@
     const formData = new FormData(event.target);
     
     try {
-      const response = await fetch('http://localhost:3000/alumnos/', {
+      const response = await fetch('ec2-3-239-52-149.compute-1.amazonaws.com:3000/alumnos', {
         method: 'POST',
         body: formData
       });
